@@ -6,67 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
+	.container {
+            width: 50%;
         }
-        .container {
+        table, tr, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
             text-align: center;
-            width: 600px;
-            margin: 50px auto;
-            border-left: 2px solid #3333;
-            border-right: 2px solid;
-            line-height: 1;
         }
-        .title {
-            color: #FF3399;
-            background-color: #FECFFD;
-            font-weight: bold;
-            margin: 4px 2px 20px;
+        tr, th, td {
+            width: 170px;
         }
-        .container .container_text{
-            background-color: #FFFFCC;
-            padding: 5px 100px;
+        .img_one{
+            padding: 10px auto;
+            width: 150px;
+            height: 150px;
         }
-        .text{
-            font-style: italic;
-            font-weight: bold;
-        }
-        .text_blue{
-            color: blue;
-        }
-        .text_brown{
-            color: brown;
-        }
-        .text_green{
-            color: green;
-        }
-        
-        </style>
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h2 class="title">MẸ !</h2>
-        <div class="container_text">
-            <div class="text text_blue">
-                <p>Mẹ là cả một trời thương</p>
-                <p>Mẹ là cả một thiên đường trần gian</p>
-                <p>Công ơn cha mẹ tựa biển trời.</p>
-            </div>
-            <hr><br>
-            <div class="text text_brown">
-                <p>Làm sao báo hiếu hỡi người ơi</p>
-                <p>Nếu chưa báo hiếu đừng bắt hiếu</p>
-                <p>Bắt hiếu làm ta khổ muôn đời.</p>
-            </div>
-            <hr><br>
-            <div class="text text_green">
-                <p>Một đời vốn liếng mẹ trao</p>
-                <p>Mẹ cho tất cả mẹ nào giữ riêng</p>
-                <p>Mẹ hiền như một bà tiên</p>
-                <p>Mẹ theo con suốt hành trình con đi.</p>
-            </div>
-        </div>
+    <table>
+        <tr>
+            <td>Quick</td>
+            <td colspan="2">brown for</td>
+            <td>jumps</td>
+        </tr>
+        <tr>
+            <td rowspan="3">over the</td>
+            <td>lazy</td>
+            <td>dog</td>
+            <td>and</td>
+        </tr>
+        <tr>
+            <td>then</td>
+            <td>it</td>
+            <td>fall</td>
+        </tr>
+        <tr>
+            <td colspan="3">prey to a lion</td>
+        </tr>
+    </table>
+	</br>
+	<div class="container">
+        <table>
+            <caption>My Store</caption>
+            <tr>
+                <th>Item Photo</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Ambersweet_oranges.jpg"
+                        alt="" class="img_one">
+                </td>
+                <td>Orange</td>
+                <td>$1 ea</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="ponegranates.jfif"
+                        alt="" class="img_one">
+                </td>
+                <td>Ponegranates</td>
+                <td>3 for $5</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="brocoli.jfif"
+                        alt="" class="img_one">
+                </td>
+                <td>Brocoli</td>
+                <td>$3 a head</td>
+            </tr>
+        </table>
     </div>
-    
 </body>
 </html>
