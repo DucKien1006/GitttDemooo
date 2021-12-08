@@ -8,6 +8,7 @@ h2{
 }
 nav{
     background-color: rgb(137, 204, 209);
+    background-image: linear-gradient(rgb(186, 224, 238), rgb(70, 184, 223));
     height: 30px;
     margin-top: 5px;
 }
